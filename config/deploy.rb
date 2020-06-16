@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.2"
+lock "~> 3.11.1"
 
 set :application, "qna"
-set :repo_url, "git@github.com:dmikhr/qna.git"
+set :repo_url, "git@github.com:Razym209/qna.git"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deployer/qna"

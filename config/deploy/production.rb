@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server "104.248.83.204", user: "deployer", roles: %w{app db web}, primary: true
+server "82.148.16.187", user: "deployer", roles: %w{app db web}, primary: true
 set :rail_env, :production
 
 set :sidekiq_config, -> { File.join(shared_path, 'config', 'sidekiq.yml') }
@@ -18,7 +18,7 @@ set :sidekiq_config, -> { File.join(shared_path, 'config', 'sidekiq.yml') }
 # Global options
 # --------------
 set :ssh_options, {
- keys: %w(/Users/dmkp/.ssh/id_rsa),
+ keys: %w(/Users/razym/.ssh/id_rsa),
  forward_agent: true,
  auth_methods: %w(publickey password),
  port: 2222
